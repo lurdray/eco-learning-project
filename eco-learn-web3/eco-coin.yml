@@ -1,0 +1,28 @@
+live url: https://api.unlendables.co.uk/
+
+
+for send rewards:
+url: https://api.unlendables.co.uk/send-reward/
+request type: post
+payload: 
+{
+"title": "<str>",
+"coins": "<str>",
+"address": "<wallet_address>"
+}
+
+e.g:
+{
+"title": "Sample course title",
+"coins": "1000 eco coins",
+"address":"MWJUI55KX3ZYB6EAOQXBUCW35HAD6NXXNOOF5XWJECLDXOACW5DIBUQUQM"
+}
+
+
+
+for view rewards:
+url: https://api.unlendables.co.uk/view-rewards/<str:wallet_address>/
+request type: get
+
+e.g:
+https://api.unlendables.co.uk/view-rewards/MWJUI55KX3ZYB6EAOQXBUCW35HAD6NXXNOOF5XWJECLDXOACW5DIBUQUQM/
